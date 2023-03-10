@@ -1,0 +1,45 @@
+{
+    "status": "ok",
+    "totalResults": 3,
+    "articles": [
+        {
+            "source": {
+                "id": "google-news-uk",
+                "name": "Google News (UK)"
+            },
+            "author": "Leicestershire Live",
+            "title": "Live weather updates as snow falls across Leicestershire - Leicestershire Live",
+            "description": null,
+            "url": "https://news.google.com/rss/articles/CBMiXmh0dHBzOi8vd3d3LmxlaWNlc3Rlcm1lcmN1cnkuY28udWsvbmV3cy9sZWljZXN0ZXItbmV3cy9saXZlLXdlYXRoZXItdXBkYXRlcy1zbm93LWZhbGxzLTgyMjYyMTXSAWJodHRwczovL3d3dy5sZWljZXN0ZXJtZXJjdXJ5LmNvLnVrL25ld3MvbGVpY2VzdGVyLW5ld3MvbGl2ZS13ZWF0aGVyLXVwZGF0ZXMtc25vdy1mYWxscy04MjI2MjE1LmFtcA?oc=5",
+            "urlToImage": null,
+            "publishedAt": "2023-03-08T13:30:00+00:00",
+            "content": null
+        },
+        {
+            "source": {
+                "id": "wired",
+                "name": "Wired"
+            },
+            "author": "Wired",
+            "title": "Weatherman's Umbrellas Are on Sale Right Now",
+            "description": "The rainy season is here. A few WIRED-tested umbrellas are discounted alongside some rain jackets.",
+            "url": "https://www.wired.com/story/weatherman-umbrella-deals-march-2023",
+            "urlToImage": "https://media.wired.com/photos/6407874ea1c135ecdb12cf22/191:100/w_1280,c_limit/Certain-Standard-The-Large-Umbrella-Gear.jpg",
+            "publishedAt": "2023-03-07T23:34:48Z",
+            "content": "Spring is almost upon us, which means we're about to see a lot of rain. April showers bring May flowers, after all. It's time to stock up on rainy-weather gearmost importantly, umbrellas. Good news! … [+4041 chars]"
+        },
+        {
+            "source": {
+                "id": "the-next-web",
+                "name": "The Next Web"
+            },
+            "author": "Ioanna Lykiardopoulou",
+            "title": "Spain has launched a digital nomad visa — here’s how to get one",
+            "description": "Sunny weather, a reasonable cost of living, delicious food, stunning landscapes — Spain has it all. And with some of the best internet speeds in Europe, the Mediterranean nation has ...",
+            "url": "http://thenextweb.com/news/spain-has-launched-a-digital-nomad-visa-heres-how-to-get-one",
+            "urlToImage": "https://img-cdn.tnwcdn.com/image/tnw-blurple?filter_last=1&fit=1280%2C640&url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2023%2F03%2FUntitled-design-2023-03-07T092043.864.jpg&signature=e82c79de7980cfdef9714f2284062005",
+            "publishedAt": "2023-03-07T10:11:28Z",
+            "content": "Sunny weather, a reasonable cost of living, delicious food, stunning landscapes Spain has it all. And with some of the best internet speeds in Europe, the Mediterranean nation has become a popular de… [+3537 chars]"
+        }
+    ]
+}
