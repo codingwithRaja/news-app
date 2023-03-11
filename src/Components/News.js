@@ -8,16 +8,47 @@ export class News extends Component {
         // console.log("Hello I am constructor from News JS")
         this.state = {
             articles: [],
-            loading: false
+            loading: false,
+            page: 1
         }
     }
     async componentDidMount() {
         // console.log("cdm")
-        let url = "https://newsapi.org/v2/top-headlines?country=us&category=business&apiKey=d0e27dbfa2db47c0a52b1aeca6013224"
+        let url = "https://newsapi.org/v2/top-headlines?country=us&category=business&apiKey=d0e27dbfa2db47c0a52b1aeca6013224&page=1&pageSize=18"
         let data = await fetch(url)
         let parseData = await data.json()
         console.log(parseData)
-        this.setState({ articles: parseData.articles, description: parseData.description, imageUrl: parseData.urlToImage })
+        this.setState({ articles: parseData.articles, totalArticles: parseData.totalResults })
+    }
+    handleNextClick = async () => {
+        console.log("Next")
+        if (this.state.page + 1 > Math.ceil(this.state.totalResults / 18)) {
+
+        }
+        else {
+            let url = `https://newsapi.org/v2/top-headlines?country=us&category=business&apiKey=d0e27dbfa2db47c0a52b1aeca6013224&page=${this.state.page + 1}&pageSize=18`
+            let data = await fetch(url)
+            let parseData = await data.json()
+            console.log(parseData)
+            this.setState({
+                page: this.state.page + 1,
+                articles: parseData.articles
+            })
+        }
+
+
+    }
+    handlePreviousClick = async () => {
+        console.log("Prev")
+        let url = `https://newsapi.org/v2/top-headlines?country=us&category=business&apiKey=d0e27dbfa2db47c0a52b1aeca6013224&page=${this.state.page - 1}&pageSize=18`
+        let data = await fetch(url)
+        let parseData = await data.json()
+        console.log(parseData)
+
+        this.setState({
+            page: this.state.page - 1,
+            articles: parseData.articles
+        })
     }
     render() {
         // console.log("render")
@@ -37,7 +68,10 @@ export class News extends Component {
 
                 </div>
 
-
+                <div className="container d-flex justify-content-between">
+                    <button disabled={this.state.page <= 1} type="button" className="btn btn-warning" onClick={this.handlePreviousClick}>Pervious</button>
+                    <button type="button" className="btn btn-warning" onClick={this.handleNextClick}>Next</button>
+                </div>
 
             </div>
         )
