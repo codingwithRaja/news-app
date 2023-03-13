@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import NewsItem from './NewsItem'
 import Spinner from './Spinner';
+import "./News.css"
 
 export class News extends Component {
 
@@ -60,7 +61,7 @@ export class News extends Component {
         // console.log("render")
         return (
             <div className='container my-3'>
-                <h2 className='text-center'>MongoNews - Top HEADLINES</h2>
+                <h2 className='text-center' id='head' > {this.props.heading}</h2>
                 <div className="text-center">
                     {this.state.loading && <Spinner />}
                 </div>
@@ -69,7 +70,7 @@ export class News extends Component {
 
                         return <div className='col-md-4' key={element.url}>
                             <NewsItem title={element.title ? element.title.slice(0, 40) : ""}
-                                description={element.description} imageUrl={element.urlToImage} newsUrl={element.url} />
+                                description={element.description} imageUrl={element.urlToImage} newsUrl={element.url} author={element.author} date={element.publishedAt} />
                         </div>
                     })}
 
