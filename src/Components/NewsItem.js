@@ -3,12 +3,13 @@ import React, { Component } from 'react'
 export class NewsItem extends Component {
 
     render() {
-        let { title, description, imageUrl, newsUrl, author, date } = this.props
+        let { title, description, imageUrl, newsUrl, author, date, source } = this.props
 
         return (
 
             <div className='my-3'>
                 <div className="card" >
+                    <span className="position-absolute top-0  badge rounded-pill bg-warning" style={{ transform: "translate(-0%,-50%)" }}>{source}</span>
                     <img src={!imageUrl ? "https://media.cnn.com/api/v1/images/stellar/prod/230309120312-climeworks-direct-air-capture-plant-file-090721.jpg?c=16x9&q=w_800,c_fill" : imageUrl} className="card-img-top" alt="..." />
                     <div className="card-body">
                         <h5 className="card-title">{title}...</h5>
