@@ -1,14 +1,12 @@
-import React, { Component } from 'react'
-import giphy from './giphy.gif'
+import React from 'react';
+import './Spinner.css';
 
-export class Spinner extends Component {
-    render() {
-        return (
-            <div>
-                <img src={giphy} alt="giphy" />
-            </div>
-        )
-    }
-}
+const Spinner = () => {
+    return (
+        <div className="spinner-container">
+            <div className="spinner"></div>
+        </div>
+    );
+};
 
-export default Spinner
+export default Spinner;

@@ -8,10 +8,10 @@ export class Navbar extends Component {
     return (
       <>
         <div>
-          <nav className="navbar navbar-expand-lg  bg-dark bg-dark">
-            <a className="navbar-brand" href="/">
+          <nav className="navbar navbar-expand-lg navbar-dark  bg-dark">
+            <Link className="navbar-brand" to="/">
               <img src="https://media.istockphoto.com/id/1351440359/vector/megaphone-with-breaking-news-speech-bubble-banner-loudspeaker-label-for-business-marketing.jpg?s=612x612&w=0&k=20&c=o2Q3N327CD_YdTjXqQ5cP2MW7rNHWDRD33ZO7iFA9QE=" width="30" height="30" alt="" />
-            </a>
+            </Link>
             <div className="container-fluid">
               <Link className="navbar-brand " style={{ color: 'white', fontWeight: 'bold', fontSize: '25px' }} to="/">MongoNews</Link>
               <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
